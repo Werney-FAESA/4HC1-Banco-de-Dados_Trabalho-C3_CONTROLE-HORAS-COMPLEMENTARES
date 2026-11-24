@@ -1,0 +1,51 @@
+---
+title: Modelo Logico Relacional - Controle de Horas Complementares (C3 MongoDB)
+---
+
+erDiagram
+
+    CURSOS {
+        Integer id_curso PK "NOT NULL"
+        String nome_curso UK "NOT NULL"
+        Integer horas_exigidas "NOT NULL"
+        String coordenador "NOT NULL"
+    }
+
+    ALUNOS {
+        Integer matricula PK "NOT NULL"
+        String nome_aluno "NOT NULL"
+        String email UK "NOT NULL"
+        Integer periodo "NOT NULL"
+        Integer id_curso FK "NOT NULL"
+    }
+
+    CATEGORIAS_ATIVIDADE {
+        Integer id_categoria PK "NOT NULL"
+        String nome_categoria UK "NOT NULL"
+        Integer limite_maximo_horas "NOT NULL"
+        String descricao "NOT NULL"
+    }
+
+    ADMINISTRADORES {
+        Integer id_admin PK "NOT NULL"
+        String nome_admin "NOT NULL"
+        String email UK "NOT NULL"
+        String cargo "NOT NULL"
+    }
+
+    TICKETS_ATIVIDADES {
+        Integer id_ticket PK "NOT NULL"
+        Integer matricula_aluno FK "NOT NULL"
+        Integer id_categoria FK "NOT NULL"
+        Integer id_admin_avaliador FK "NULL"
+        String titulo "NOT NULL"
+        Integer horas_solicitadas "NOT NULL"
+        Integer horas_validadas "NOT NULL"
+        String status "NOT NULL"
+        String observacao_admin "NULL"
+    }
+
+    CURSOS ||--o{ ALUNOS : "possui"
+    ALUNOS ||--o{ TICKETS_ATIVIDADES : "solicita"
+    CATEGORIAS_ATIVIDADE ||--o{ TICKETS_ATIVIDADES : "classifica"
+    ADMINISTRADORES |o--o{ TICKETS_ATIVIDADES : "avalia"

@@ -1,0 +1,21 @@
+---
+title: Diagrama ER - Controle de Horas Complementares
+---
+
+flowchart LR
+
+    CURSOS[CURSOS]
+    ALUNOS[ALUNOS]
+    CATEGORIAS_ATIVIDADE[CATEGORIAS_ATIVIDADE]
+    ADMINISTRADORES[ADMINISTRADORES]
+    TICKETS_ATIVIDADES[TICKETS_ATIVIDADES]
+
+    r1{matriculado_em}
+    r2{solicita}
+    r3{pertence_a}
+    r4{avaliado_por}
+
+    CURSOS ---|1,1| r1 ---|0,N| ALUNOS
+    ALUNOS ---|1,1| r2 ---|0,N| TICKETS_ATIVIDADES
+    CATEGORIAS_ATIVIDADE ---|1,1| r3 ---|0,N| TICKETS_ATIVIDADES
+    ADMINISTRADORES ---|0,1| r4 ---|0,N| TICKETS_ATIVIDADES
