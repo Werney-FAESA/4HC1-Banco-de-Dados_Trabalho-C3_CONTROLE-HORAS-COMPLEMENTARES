@@ -44,6 +44,7 @@ class Controller_Curso:
 
     @staticmethod
     def _ler_texto(mensagem: str, valor_atual: Optional[str] = None) -> str:
+        while True:
             entrada = input(mensagem).strip()
             if not entrada and valor_atual is not None:
                 return valor_atual

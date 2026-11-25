@@ -11,7 +11,8 @@ from __future__ import annotations
 
 
 class Curso:
-    # TODO (Membro 1 - Kaike): Revisar/completar getters, setters e formatação do to_string()
+    """Representa um documento da coleção ``cursos`` do MongoDB."""
+
     def __init__(
         self,
         id_curso: int | None = None,
@@ -55,3 +56,6 @@ class Curso:
             f"Horas Exigidas: {self.get_horas_exigidas()}h | "
             f"Coordenador: {self.get_coordenador()}"
         )
+
+    def __str__(self) -> str:
+        return self.to_string()
