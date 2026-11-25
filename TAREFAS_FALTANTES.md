@@ -6,15 +6,15 @@
 
 ## 👤 Membro 1 — Kaike Vaccari do Nascimento (Conexão, Seed & `cursos`)
 
-- [ ] **Revisar e testar `src/conexion/mongo_queries.py`**:
+- [x] **Revisar e testar `src/conexion/mongo_queries.py`**:
   - Validar conexão com o container MongoDB (`localhost:27017`, banco `labdatabase`).
-- [ ] **Completar e testar `src/createCollectionsAndData.py`**:
+- [x] **Completar e testar `src/createCollectionsAndData.py`**:
   - Criar as 5 coleções (`cursos`, `alunos`, `categorias_atividade`, `administradores`, `tickets_atividades`) e popular com os dados iniciais.
-- [ ] **Implementar `src/model/curso.py`**:
+- [x] **Implementar `src/model/curso.py`**:
   - Classe `Curso` com construtor `__init__`, atributos (`id_curso`, `nome_curso`, `horas_exigidas`, `coordenador`), getters, setters e `to_string()`.
-- [ ] **Implementar `src/controller/controller_curso.py`**:
+- [x] **Implementar `src/controller/controller_curso.py`**:
   - Métodos `inserir_curso()`, `atualizar_curso()`, `excluir_curso()`, `listar_cursos()` e `verifica_existencia()` usando `MongoQueries`.
-- [ ] **Registrar prompts em `PROMPTS/PROMPTS_KAIKE.md`**.
+- [x] **Registrar prompts em `PROMPTS/PROMPTS_KAIKE.md`**.
 
 ---
 
