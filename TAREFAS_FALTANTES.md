@@ -30,13 +30,13 @@
 
 ## 👤 Membro 3 — Bruno Mauro Bayer Laiber (Coleção `categorias_atividade` & Exclusão Segura)
 
-- [ ] **Implementar `src/model/categoria_atividade.py`**:
+- [x] **Implementar `src/model/categoria_atividade.py`**:
   - Classe `CategoriaAtividade` com atributos (`id_categoria`, `nome_categoria`, `limite_maximo_horas`, `descricao`), getters, setters e `to_string()`.
-- [ ] **Implementar `src/controller/controller_categoria_atividade.py`**:
+- [x] **Implementar `src/controller/controller_categoria_atividade.py`**:
   - Métodos `inserir_categoria()`, `atualizar_categoria()`, `excluir_categoria()`, `listar_categorias()` e `verifica_existencia()`.
-- [ ] **Implementar `src/utils/exclusao_segura.py` para MongoDB (item 7.c.5.i do edital)**:
+- [x] **Implementar `src/utils/exclusao_segura.py` para MongoDB (item 7.c.5.i do edital)**:
   - Mapa `DEPENDENCIAS` das 5 coleções, contagem de documentos filhos (`count_documents`) e opção de exclusão recursiva em cascata (`delete_many` / `delete_one`).
-- [ ] **Registrar prompts em `PROMPTS/PROMPTS_BRUNO.md`**.
+- [x] **Registrar prompts em `PROMPTS/PROMPTS_BRUNO.md`**.
 
 ---
 
