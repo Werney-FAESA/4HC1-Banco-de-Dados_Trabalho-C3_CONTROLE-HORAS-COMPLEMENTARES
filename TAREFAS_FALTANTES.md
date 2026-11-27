@@ -20,11 +20,11 @@
 
 ## 👤 Membro 2 — Issacar Mattos Gutler (Coleção `alunos`)
 
-- [ ] **Implementar `src/model/aluno.py`**:
+- [x] **Implementar `src/model/aluno.py`**:
   - Classe `Aluno` com atributos (`matricula`, `nome_aluno`, `email`, `periodo`, `curso: Curso`), getters, setters e `to_string()`.
-- [ ] **Implementar `src/controller/controller_aluno.py`**:
+- [x] **Implementar `src/controller/controller_aluno.py`**:
   - Métodos `inserir_aluno()`, `atualizar_aluno()`, `excluir_aluno()`, `listar_alunos()` e `verifica_existencia()` com validação de `id_curso` na coleção `cursos` e exclusão via `excluir_registro_seguro`.
-- [ ] **Registrar prompts em `PROMPTS/PROMPTS_ISSACAR.md`**.
+- [x] **Registrar prompts em `PROMPTS/PROMPTS_ISSACAR.md`**.
 
 ---
 
