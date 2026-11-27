@@ -20,7 +20,7 @@ if TYPE_CHECKING:
 
 
 class Aluno:
-    # TODO (Membro 2 - Issacar): Implementar construtor, getters, setters e to_string()
+    """Representa um documento da coleção ``alunos`` com seu curso associado."""
     def __init__(
         self,
         matricula: int | None = None,
