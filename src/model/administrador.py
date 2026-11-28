@@ -11,7 +11,8 @@ from __future__ import annotations
 
 
 class Administrador:
-    # TODO (Membro 4 - Daniel): Implementar construtor, getters, setters e to_string()
+    """Representa um documento da coleção ``administradores`` do MongoDB."""
+
     def __init__(
         self,
         id_admin: int | None = None,
@@ -55,3 +56,6 @@ class Administrador:
             f"E-mail: {self.get_email()} | "
             f"Cargo: {self.get_cargo()}"
         )
+
+    def __str__(self) -> str:
+        return self.to_string()
