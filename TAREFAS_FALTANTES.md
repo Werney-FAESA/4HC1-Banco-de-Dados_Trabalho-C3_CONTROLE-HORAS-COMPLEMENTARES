@@ -42,13 +42,13 @@
 
 ## 👤 Membro 4 — Daniel Lima Del'Antonio (Coleção `administradores` & Relatórios MongoDB)
 
-- [ ] **Implementar `src/model/administrador.py`**:
+- [x] **Implementar `src/model/administrador.py`**:
   - Classe `Administrador` com atributos (`id_admin`, `nome_admin`, `email`, `cargo`), getters, setters e `to_string()`.
-- [ ] **Implementar `src/controller/controller_administrador.py`**:
+- [x] **Implementar `src/controller/controller_administrador.py`**:
   - Métodos `inserir_administrador()`, `atualizar_administrador()`, `excluir_administrador()`, `listar_administradores()` e `verifica_existencia()`.
-- [ ] **Implementar `src/reports/relatorios.py`**:
+- [x] **Implementar `src/reports/relatorios.py`**:
   - Relatórios com `$group` (sumarização de horas por aluno, por categoria e por status) e relatórios com `$lookup` (junção de tickets detalhados e alunos com cursos).
-- [ ] **Registrar prompts em `PROMPTS/PROMPTS_DANIEL.md`**.
+- [x] **Registrar prompts em `PROMPTS/PROMPTS_DANIEL.md`**.
 
 ---
 
